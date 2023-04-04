@@ -41,7 +41,6 @@ main > section {
 }
 
 main section.verso-parallax {
-    width: auto;
     background-color: #ffffff;
     background-size: cover;   
     background-attachment: fixed;
