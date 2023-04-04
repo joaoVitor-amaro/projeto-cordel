@@ -45,7 +45,8 @@ main > section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
-    line-height: 3em;
+    line-height: 2em;
+    font-size: 3.5vw;
     font-family: var(--verso);
 }
 
@@ -92,30 +93,4 @@ footer > p {
     color: white;
     text-align: center;
     font-size: 3.5vw;
-}
-
-@media screen and (max-width: 768px) {      
-    p {
-        font-size: 2.5vw;
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 992px){      
-    p {
-        font-size: 3vw;
-        line-height: 1.9em;
-    }
-}
-
-@media screen and (min-width: 993px) and (max-width: 1200px){      
-    p {
-        font-size: 2vw;
-        line-height: 2em;
-    }
-}
-
-@media screen and (min-width: 1201px) {      
-    p {
-        font-size: 1.5vw;
-    }
 }
