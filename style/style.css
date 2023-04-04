@@ -42,15 +42,26 @@ section.image {
 
 #img01 {
     background-image: url(../imagens/background001.jpg);
-    background-position: center center;
-    background-size: cover;  
+    background-position: right center;
+      
 }
+
+#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: center center;
+}
+
+@media screen and (max-width: 470px) {
+    #img01 {
+        background-position: center center;
+    }
+}
+
 
 section.image > p {
     display: inline-block;
     padding: 5px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.329);
     
 }
