@@ -24,6 +24,7 @@ header > p {
     color: white;
     text-align: center;
     padding-top: 10px;
+    font-size: 3.5vw;
 }
 
 header > p > a {
@@ -38,12 +39,13 @@ header > p > a:hover {
 main > section {
     padding-left: 30px;
     line-height: 2em;
+    font-size: 3.5vw;
 }
 
 main section.verso-parallax {
     background-color: #ffffff;
     background-size: cover;   
-    background-attachment: fixed;
+   
 }
 
 main > section.verso-parallax > p {
