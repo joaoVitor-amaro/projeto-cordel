@@ -26,24 +26,41 @@ header > p {
     padding-top: 10px;
 }
 
-span {
-    font-weight: bolder;
+header > p > a {
+    text-decoration: none;
+    color: white;
+} 
+
+header > p > a:hover {
+    text-decoration: underline;
 }
 
-section.image {
+main > section {
+    padding-left: 30px;
+    line-height: 2em;
+}
+
+main section.verso-parallax {
+    width: auto;
     background-color: #ffffff;
     background-size: cover;   
     background-attachment: fixed;
 }
 
-section.image {
-    color: #ffffff;
+main > section.verso-parallax > p {
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.329);
+    
+}
+main section > p.afasta-bottom-verso {
+    padding-bottom: 6vh;
 }
 
 #img01 {
     background-image: url(../imagens/background001.jpg);
-    background-position: right center;
-      
+    background-position: right center;    
 }
 
 #img02 {
@@ -51,22 +68,18 @@ section.image {
     background-position: center center;
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 760px) {
     #img01 {
         background-position: center center;
     }
 }
 
-
-section.image > p {
-    display: inline-block;
+footer {
+    background-color: black;
     padding: 5px;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.329);
-    
 }
 
-section {
-    padding-left: 30px;
-    line-height: 2em;
+footer > p {
+    color: white;
+    text-align: center;
 }
