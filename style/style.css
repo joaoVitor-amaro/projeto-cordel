@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Sriracha&display=swap');
 
 :root {
+    --fontPadrao: Verdana, Geneva, Tahoma, sans-serif;
     --titulo: 'Passion One', cursive;
     --verso: 'Sriracha', cursive;
 }
@@ -9,25 +10,26 @@
     margin: 0px;
     padding: 0px;
 }
-
+body, html {
+    min-height: 100vh;
+    font-family: var(--fontPadrao);
+}
 
 header {
     background-color: #000000;
     padding: 10px;
+    color: white;
+    text-align: center;
 }
 
 header > h1 {
     padding: 50px 20px 0px 20px;
-    color: white;
-    text-align: center;
     font-family: var(--titulo);
     font-variant: small-caps;
     font-size: 7vw;
 }
 
 header > p {
-    color: white;
-    text-align: center;
     padding: 10px 0px 50px 0px;
     font-size: 3.5vw;
 }
@@ -35,6 +37,7 @@ header > p {
 header > p > a {
     text-decoration: none;
     color: white;
+    font-weight: bolder;
 } 
 
 header > p > a:hover {
@@ -43,15 +46,22 @@ header > p > a:hover {
 
 main > section {
     padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-bottom: 10vh; 
     padding-left: 30px;
     line-height: 2em;
     font-size: 3.5vw;
     font-family: var(--verso);
 }
 
+main > section.verso-normal > p {
+    background-color: white; 
+    color: black; 
+    padding-bottom: 2em;
+}
+
 main section.verso-parallax {
-    background-color: #ffffff;
+    background-color: #a9a9a9;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.76);
     background-size: cover; 
     background-repeat: no-repeat;  
     background-attachment: fixed;
@@ -61,12 +71,9 @@ main > section.verso-parallax > p {
     display: inline-block;
     padding: 5px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.329);
-    
+    background-color: rgba(0, 0, 0, 0.329); 
 }
-main section > p.afasta-bottom-verso {
-    padding-bottom: 6vh;
-}
+
 
 #img01 {
     background-image: url(../imagens/background001.jpg);
@@ -86,11 +93,8 @@ main section > p.afasta-bottom-verso {
 
 footer {
     background-color: black;
-    padding: 5px;
-}
-
-footer > p {
+    padding: 10px;
     color: white;
     text-align: center;
-    font-size: 3.5vw;
 }
+
